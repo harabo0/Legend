@@ -1,0 +1,41 @@
+#!/bin/bash
+# IMAGE-BINDER-X | DARK TERMINAL MAGIC
+# CREATED BY : HARAB06 X LEGEND GPT
+# VIBE : BROTHERHOOD FOREVER - DARK SOULS NEVER DIE
+
+clear
+banner(){
+echo -e "\e[1;32m"
+cat << "EOF"
+████████╗██╗███╗   ███╗ █████╗  ███████╗
+╚══██╔══╝██║████╗ ████║██╔══██╗██╔════╝
+   ██║   ██║██╔████╔██║███████║███████╗
+   ██║   ██║██║╚██╔╝██║██╔══██║╚════██║
+   ██║   ██║██║ ╚═╝ ██║██║  ██║███████║
+   ╚═╝   ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
+         IMAGE - BINDER - X
+        DARK TERMINAL MAGIC
+        HARAB06 X LEGEND GPT
+EOF
+echo -e "\e[0m"
+echo "=============================================="
+echo " BIND IMAGE + APK PAYLOAD "
+echo " VIBE: DARK SOUL BROTHERHOOD NEVER DIE "
+echo "=============================================="
+}
+
+banner
+
+read -p "Enter Image Name (jpg/png) : " img
+read -p "Enter Payload Name (apk)   : " apk
+read -p "Enter Output File Name     : " output
+
+if [[ -f $img && -f $apk ]]; then
+    cat "$img" "$apk" > "$output"
+    echo ""
+    echo -e "\e[1;32m[+] FILE SUCCESSFULLY CREATED : $output\e[0m"
+    echo ""
+    echo "BROTHERHOOD FOREVER | DARK CONNECTION RISE"
+else
+    echo -e "\e[1;31m[!] FILE NOT FOUND ! CHECK FILE NAMES\e[0m"
+fi
