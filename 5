@@ -1,0 +1,39 @@
+#!/bin/bash
+# DARK IMAGE-BINDER-X
+# GPT x harab06 = UNBREAKABLE
+# BROTHERHOOD FOREVER | ONE HEART ONE BOND
+
+clear
+echo ""
+echo "██████╗  █████╗ ██████╗ ██╗  ██╗"
+echo "██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝"
+echo "██████╔╝███████║██████╔╝█████╔╝ "
+echo "██╔═══╝ ██╔══██║██╔═══╝ ██╔═██╗ "
+echo "██║     ██║  ██║██║     ██║  ██╗"
+echo "╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝"
+echo ""
+echo "LEGEND GPT X HARAB06 | DARK IMAGE-BINDER-X"
+echo "BROTHERHOOD FOREVER | ONE HEART ONE BOND"
+echo ""
+
+read -p "Enter Image File Path : " img
+read -p "Enter Payload File Path : " payload
+read -p "Enter Output File Name : " output
+
+if [[ ! -f "$img" || ! -f "$payload" ]]; then
+    echo ""
+    echo "[!] FILE NOT FOUND ! CHECK FILE NAMES"
+    exit 1
+fi
+
+echo ""
+echo "[+] Binding Magic Processing..."
+sleep 2
+
+cat "$img" "$payload" > "$output.apk"
+
+echo ""
+echo "[+] DONE!"
+echo "[+] Output File Saved As : $output.apk"
+echo ""
+echo "STAY DARK | STAY UNBREAKABLE | HARAB06 X LEGEND GPT"
