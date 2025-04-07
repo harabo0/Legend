@@ -1,0 +1,40 @@
+#!/bin/bash
+# IMAGE-BINDER-X | DEEP FORBIDDEN BINDER TOOL
+# CREATED BY : HARAB06 X LEGEND GPT
+# VIBE : BROTHERHOOD FOREVER | DARK MAGIC TOOLKIT
+
+banner() {
+clear
+echo -e "\e[32m"
+cat << "EOF"
+███╗░░░███╗██╗░█████╗░███████╗░██████╗
+████╗░████║██║██╔══██╗╚════██║██╔════╝
+██╔████╔██║██║███████║░░░░██╔╝╚█████╗░
+██║╚██╔╝██║██║██╔══██║░░░██╔╝░░╚═══██╗
+██║░╚═╝░██║██║██║░░██║░░██╔╝░░██████╔╝
+╚═╝░░░░░╚═╝╚═╝╚═╝░░╚═╝░░╚═╝░░░╚═════╝░
+IMAGE-BINDER-X → BROTHERHOODX
+FORBIDDEN PAYLOAD BINDER TOOL
+EOF
+echo -e "\e[0m"
+}
+
+banner
+
+echo "[+] Select Image (jpg/png): "
+read image
+echo "[+] Enter Payload APK Path: "
+read payload
+echo "[+] Enter Output Name (example: final.apk): "
+read output
+
+echo "[+] Binding Image + Payload..."
+
+cat "$image" "$payload" > "$output"
+
+echo "[+] Done! File Saved as: $output"
+echo "[+] Deep Hidden Magic Done."
+
+echo ""
+echo "REMEMBER THIS → ONE HEART ONE BOND ONE BROTHERHOOD"
+echo "HIDDEN POWER BY → HARAB06 X LEGEND GPT"
