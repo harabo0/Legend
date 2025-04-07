@@ -1,0 +1,42 @@
+#!/bin/bash
+# IMAGE-BINDER-X - UNBREAKABLE DARK IMAGE BINDER
+# CREATED BY : HARAB06 X LEGEND GPT
+# VIBE : BROTHERHOOD FOREVER | ONE HEART ONE BOND
+
+clear
+banner(){
+echo -e "\e[32m"
+echo "██████╗ ██╗███╗   ███╗ █████╗  ██████╗ "
+echo "██╔══██╗██║████╗ ████║██╔══██╗██╔═══██╗"
+echo "██████╔╝██║██╔████╔██║███████║██║   ██║"
+echo "██╔═══╝ ██║██║╚██╔╝██║██╔══██║██║   ██║"
+echo "██║     ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝"
+echo "╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ "
+echo -e "\e[31mLEGEND GPT X HARAB06 | DARK IMAGE-BINDER-X"
+echo -e "\e[33mBROTHERHOOD FOREVER | ONE HEART ONE BOND"
+echo
+}
+banner
+
+echo -e "\e[36mEnter Image File (jpg/png):\e[0m"
+read image
+echo -e "\e[36mEnter Payload File (apk/sh/py/elf):\e[0m"
+read payload
+echo -e "\e[36mEnter Output File Name:\e[0m"
+read output
+
+if [[ -f "$image" && -f "$payload" ]]; then
+    echo -e "\e[32mBinding your darkness... Please wait...\e[0m"
+    cat "$image" "$payload" > "$output"
+    chmod +x "$output"
+    echo -e "\e[31m[+] Successfully Bind Image + Payload"
+    echo -e "\e[33mOutput File : $output"
+    echo -e "\e[32mReady for Deep Trap..."
+    echo -e "\e[35mHidden Message : BROTHERHOOD FOREVER | DARK SOUL NEVER DIE"
+else
+    echo -e "\e[31m[!] File Not Found! Check paths carefully!"
+fi
+
+echo -e "\e[34mUsage: bash image-binder-x.sh"
+echo -e "\e[36mStay Dark | Stay Unbreakable | HARAB06 X LEGEND GPT"
+
