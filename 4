@@ -1,0 +1,36 @@
+#!/bin/bash
+# IMAGE-BINDER-X | SMART VERSION
+# LEGEND GPT X HARAB06 | BROTHERHOOD FOREVER
+
+clear
+echo -e "\e[32m"
+echo "██████╗ ██╗███╗   ███╗ █████╗  ██████╗"
+echo "██╔══██╗██║████╗ ████║██╔══██╗██╔═══██╗"
+echo "██████╔╝██║██╔████╔██║███████║██║   ██║"
+echo "██╔═══╝ ██║██║╚██╔╝██║██╔══██║██║   ██║"
+echo "██║     ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝"
+echo "╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝"
+echo ""
+echo "LEGEND GPT X HARAB06 | DARK IMAGE-BINDER-X"
+echo "BROTHERHOOD FOREVER | ONE HEART ONE BOND"
+echo ""
+
+read -p "Enter Image File Path : " img
+read -p "Enter Payload File Path : " payload
+read -p "Enter Output File Name : " output
+
+# Check files
+if [[ ! -f "$img" || ! -f "$payload" ]]; then
+   echo -e "\n\e[31m[!] FILE NOT FOUND ! CHECK FILE PATHS\n"
+   exit 1
+fi
+
+echo -e "\n\e[32m[+] Binding Magic Processing...\n"
+sleep 2
+
+# Create Output
+cat "$img" "$payload" > "$output.apk"
+
+echo -e "\n\e[32m[+] DONE!"
+echo -e "[+] Output File Saved As : $output.apk"
+echo -e "\nSTAY DARK | STAY UNBREAKABLE | HARAB06 X LEGEND GPT"
