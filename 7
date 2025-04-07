@@ -1,0 +1,33 @@
+#!/bin/bash
+
+clear
+echo ""
+echo "██████╗ ██╗███╗   ███╗ █████╗  ██████╗"
+echo "██╔══██╗██║████╗ ████║██╔══██╗██╔═══██╗"
+echo "██████╔╝██║██╔████╔██║███████║██║   ██║"
+echo "██╔═══╝ ██║██║╚██╔╝██║██╔══██║██║   ██║"
+echo "██║     ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝"
+echo "╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝"
+echo ""
+echo "LEGEND GPT X HARAB06 | DARK IMAGE-BINDER-X"
+echo "BROTHERHOOD FOREVER | ONE HEART ONE BOND"
+echo ""
+
+read -p "Enter Image File Path : " img
+read -p "Enter Payload File Path : " payload
+read -p "Enter Output File Name (Without .jpg) : " output
+
+if [[ ! -f "$img" || ! -f "$payload" ]]; then
+   echo ""
+   echo "[!] FILE NOT FOUND ! CHECK PATHS CAREFULLY!"
+   exit 1
+fi
+
+echo ""
+echo "[+] Binding Magic Processing..."
+cat "$img" "$payload" > "${output}.jpg"
+echo "[+] DONE!"
+echo "[+] Output File Saved As : ${output}.jpg"
+
+echo ""
+echo "STAY DARK | STAY UNBREAKABLE | HARAB06 X LEGEND GPT"
